@@ -1,6 +1,6 @@
 :root{
-    --primaryColor:rgb(55, 173, 241);
-    --secondaryColor1:rgb(23, 143, 199);
+    --primaryColor:rgb(141, 167, 163);
+    --secondaryColor1:rgb(55, 173, 241);
     --secondaryColor2:black;
     --baseColor:white;
 }
@@ -10,11 +10,11 @@
     position: absolute;
 }
 .mainBox.leftBox{
-    background-color:var(--primaryColor);
+    background-color:var(--secondaryColor1);
     text-align: center;
 }
 .mainBox.rightBox{
-    background-color:var(--secondaryColor2);
+    background-color:var(--baseColor);
     /* float:right; */
     margin-left: 50%;
 }
@@ -29,15 +29,37 @@
     color:var(--baseColor);
 }
 .watch {
-    /* margin-left: 50%;
-    margin-right: 0;
+     margin-left: 50%;
+    /* margin-right: 0;
     margin-top: 30% ;
     background-color: black;
     height: 100px; */
-    height: 100px;
-    width: 50%;
-    margin-top: 10px;
-    margin-left: 50%;
-    background-color:var(--secondaryColor);
+    border-radius: 25px;
+    background: var(--primaryColor);
+    padding: 20px; 
+    width: 200px;
+    height: 200px; 
+    margin-left: 60%;
+
+    /* align-content: center; */
     /* position: relative; */
+}
+.watch.upStrap{
+    /* padding: 100px; */
+    width: 150px;
+    margin-left:62%;
+}
+.watch.mainWindow{
+    /* padding:10px; */
+    background-color:var(--secondaryColor2);
+}
+.watch.downStrap{
+    /* padding:100px; */
+    width:150px;
+    margin-left:62%;
+}
+.mainWindow.innerWindow{
+    background: var(--secondaryColor2);
+    margin-left: 51%;
+    padding:10px;
 }
