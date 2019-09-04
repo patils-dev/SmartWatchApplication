@@ -14,7 +14,7 @@
     text-align: center;
 }
 .mainBox.rightBox{
-    background-color:var(--baseColor);
+    background-color:var(--secondaryColor2);
     /* float:right; */
     margin-left: 50%;
 }
@@ -27,4 +27,17 @@
 }
 .changeNameColor{
     color:var(--baseColor);
+}
+.watch {
+    /* margin-left: 50%;
+    margin-right: 0;
+    margin-top: 30% ;
+    background-color: black;
+    height: 100px; */
+    height: 100px;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 50%;
+    background-color:var(--secondaryColor);
+    /* position: relative; */
 }
