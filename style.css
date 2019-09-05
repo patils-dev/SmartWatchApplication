@@ -53,17 +53,35 @@ span{
     height: 33%;
 }
 .implementation{
-    background-color: brown;
-    border-radius: 5%;
+    /* background-color: brown;
+    border-radius: 5%; */
 }
-.upstrap1{
+/* .upstrap1{
     background-color: black;
     border-radius: 5%;
     height: 40%;
    margin-top:20%;
-}
-.downstrap1{
+} */
+/* .downstrap1{
     background-color: black;
     border-radius: 5%;
     height: 40%;
+} */
+.outer-rectangle{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+     height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color:var(--secondaryColor2);
+}
+.inner-rectangle{
+    padding: 10;
+    margin: 10;
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+
 }
