@@ -33,5 +33,37 @@
 } */ 
 .col.left{
     height: 100vh;
-    background-color: blue;
+    background-color:var(--secondaryColor1);
+    text-align: center;
+}
+h1{
+    margin-top: 50%;
+}
+span{
+    color: var(--baseColor);
+}
+.row.upstrap{
+    height: 33%;
+    
+}
+.row.mainWindow{
+    height: 33%;
+}
+.row.downStrap{
+    height: 33%;
+}
+.implementation{
+    background-color: brown;
+    border-radius: 5%;
+}
+.upstrap1{
+    background-color: black;
+    border-radius: 5%;
+    height: 40%;
+   margin-top:20%;
+}
+.downstrap1{
+    background-color: black;
+    border-radius: 5%;
+    height: 40%;
 }
