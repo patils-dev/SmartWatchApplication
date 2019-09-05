@@ -4,7 +4,7 @@
     --secondaryColor2:black;
     --baseColor:white;
 }
-.mainBox{
+/* .mainBox{
     height: 100vh;
     width: 50%;
     position: absolute;
@@ -16,7 +16,7 @@
 .mainBox.rightBox{
     background-color:var(--baseColor);
     /* float:right; */
-    margin-left: 50%;
+    /* margin-left: 50%;
 }
 #name{
     font-weight: bold;
@@ -28,38 +28,10 @@
 .changeNameColor{
     color:var(--baseColor);
 }
-.watch {
-     margin-left: 50%;
-    /* margin-right: 0;
-    margin-top: 30% ;
-    background-color: black;
-    height: 100px; */
-    border-radius: 25px;
-    background: var(--primaryColor);
-    padding: 20px; 
-    width: 200px;
-    height: 200px; 
-    margin-left: 60%;
-
-    /* align-content: center; */
-    /* position: relative; */
-}
-.watch.upStrap{
-    /* padding: 100px; */
-    width: 150px;
-    margin-left:62%;
-}
-.watch.mainWindow{
-    /* padding:10px; */
-    background-color:var(--secondaryColor2);
-}
-.watch.downStrap{
-    /* padding:100px; */
-    width:150px;
-    margin-left:62%;
-}
-.mainWindow.innerWindow{
-    background: var(--secondaryColor2);
-    margin-left: 51%;
-    padding:10px;
+.container{
+    background-color: blue;
+} */ 
+.col.left{
+    height: 100vh;
+    background-color: blue;
 }
