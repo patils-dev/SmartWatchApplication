@@ -1,42 +1,16 @@
 :root{
-    --primaryColor:rgb(141, 167, 163);
+    --primaryColor:rgb(88, 180, 166);
     --secondaryColor1:rgb(55, 173, 241);
     --secondaryColor2:black;
     --baseColor:white;
 }
-/* .mainBox{
-    height: 100vh;
-    width: 50%;
-    position: absolute;
-}
-.mainBox.leftBox{
-    background-color:var(--secondaryColor1);
-    text-align: center;
-}
-.mainBox.rightBox{
-    background-color:var(--baseColor);
-    /* float:right; */
-    /* margin-left: 50%;
-}
-#name{
-    font-weight: bold;
-    font-family: 'Times New Roman', Times;
-    font-size: 3em;
-    margin-top: 5em;
-    
-}
-.changeNameColor{
-    color:var(--baseColor);
-}
-.container{
-    background-color: blue;
-} */ 
+
 .col.left{
     height: 100vh;
     background-color:var(--secondaryColor1);
     text-align: center;
 }
-h1{
+.Heading{
     margin-top: 50%;
 }
 span{
@@ -47,26 +21,12 @@ span{
     
 }
 .row.mainWindow{
-    height: 33%;
+    height: 45%;
 }
 .row.downStrap{
     height: 33%;
 }
-/* .implementation{ */
-    /* background-color: brown;
-    border-radius: 5%; */
-/* } */
-/* .upstrap1{
-    background-color: black;
-    border-radius: 5%;
-    height: 40%;
-   margin-top:20%;
-} */
-/* .downstrap1{
-    background-color: black;
-    border-radius: 5%;
-    height: 40%;
-} */
+
 .outer-rectangle{
     justify-content: center;
     align-items: center;
@@ -97,10 +57,58 @@ span{
     background-color: black; 
 }
 .lowerStrap{
-    display: flex;
     margin-left: 30px;
     height: 60%;
     width: 70%;
     border-radius: 10px;
     background-color: black; 
+}
+.timer{
+    height: 33%;
+    display: flex;
+}
+.time{
+    height: 50%;
+    display: inline-block;
+    align-items: center;
+    margin-left: 40px;
+}
+
+#timer-btn{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    margin-left: 40%;
+}
+#time-btn{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    /* display: inline-block; */
+}
+#msg-btn{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    /* display: inline-block; */
+}
+#music-btn{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    /* display: inline-block; */
+}
+.first-btn{
+    display:flex;
+}
+.message{
+    display: none;
 }
