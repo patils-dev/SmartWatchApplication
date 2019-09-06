@@ -10,7 +10,7 @@
     background-color:var(--secondaryColor1);
     text-align: center;
 }
-.Heading{
+ .Heading{
     margin-top: 50vh;
 }
 span{
@@ -23,9 +23,9 @@ span{
 .row.mainWindow{
     height: 45%;
 }
-.row.downStrap{
-    height: 33%;
-}
+.row.downStrap{ 
+    height: 20%
+} 
 
 .outer-rectangle{
     justify-content: center;
@@ -50,9 +50,9 @@ span{
     justify-content: center;
     align-items: flex-end;
     display: flex;
-    margin-top: 13.5vh;
+    margin-top: 21.5vh;
     margin-left: 30px;
-    height: 60%;
+    height: 35%;
     width: 70%;
     border-radius: 10px;
     background-color: black; 
@@ -91,14 +91,14 @@ span{
     padding:0;
     cursor: pointer;
     /* display: inline-block; */
-}
+ }
 #msg-btn{
     background:none;
     border:none;
     margin:0;
     padding:0;
     cursor: pointer;
-    /* display: inline-block; */
+    
 }
 #music-btn{
     background:none;
@@ -106,15 +106,10 @@ span{
     margin:0;
     padding:0;
     cursor: pointer;
-    /* display: inline-block; */
-}
-/* .first-btn{
-    display:flex;
-}
-.message{
-    display: none;
-} */
-.message-top{ 
+    
+} 
+
+ .message-top{ 
     padding: 10; 
     margin: 10;
     height: 90%;
@@ -131,4 +126,7 @@ span{
 }
 .msg1{
     height: 20px;
+}  
+.playMusic{
+    display: none;
 }
