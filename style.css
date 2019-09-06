@@ -52,10 +52,10 @@ span{
 .row.downStrap{
     height: 33%;
 }
-.implementation{
+/* .implementation{ */
     /* background-color: brown;
     border-radius: 5%; */
-}
+/* } */
 /* .upstrap1{
     background-color: black;
     border-radius: 5%;
@@ -79,9 +79,28 @@ span{
 .inner-rectangle{
     padding: 10;
     margin: 10;
-    height: 95%;
-    width: 95%;
+    height: 90%;
+    width: 90%;
     border-radius: 10px;
     background-color: var(--primaryColor);
 
+}
+.upperStrap{
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    margin-top: 13.5vh;
+    margin-left: 30px;
+    height: 60%;
+    width: 70%;
+    border-radius: 10px;
+    background-color: black; 
+}
+.lowerStrap{
+    display: flex;
+    margin-left: 30px;
+    height: 60%;
+    width: 70%;
+    border-radius: 10px;
+    background-color: black; 
 }
