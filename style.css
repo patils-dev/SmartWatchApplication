@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --primaryColor:rgb(88, 180, 166);
     --secondaryColor1:rgb(55, 173, 241);
     --secondaryColor2:black;
@@ -91,7 +91,7 @@ span{
     border-radius: 40px;
     cursor: pointer;  
     /* display: inline-block; */
- }
+ /*}
 #msg-btn{
     background-color: grey;
     border-radius: 40px;
@@ -124,4 +124,148 @@ span{
 }
 .material-icons{
     color: var(--primaryColor);
+} */
+
+
+:root{
+    --primaryColor:rgb(88, 180, 166);
+    --secondaryColor1:rgb(55, 173, 241);
+    --secondaryColor2:black;
+    --secondaryColor3:grey;
+    --baseColor:rgb(203, 212, 212);
+}
+
+.col.left{
+    height: 100vh;
+    background-color:var(--secondaryColor1);
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+.heading{
+    margin-top: 40%;
+}
+span{
+    color: var(--baseColor);
+}
+.row.upstrap{
+    height: 33%;
+    
+}
+.row.mainWindow{
+    height: 45%;
+}
+.row.downStrap{ 
+    height: 20%
+} 
+
+.outer-rectangle{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color:var(--secondaryColor2);
+}
+.inner-rectangle{
+    padding: 10;
+    margin: 10;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--baseColor);
+
+}
+
+.upperStrap{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 21.5vh;
+    margin-left: 45px;
+    /* margin-right: 20px; */
+    height: 35%;
+    width: 60%;
+    border-radius: 10px;
+    background-color: black; 
+}
+.lowerStrap{
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+    /* margin-right: 20px; */
+    height: 60%;
+    width: 60%;
+    border-radius: 10px;
+    background-color: black; 
+}
+.material-icons{
+    color: var(--primaryColor);
+}
+.timer{
+    height: 80%;
+    display: flex;
+}
+.time{
+    height: 20%;
+    /* display: inline-block;
+    align-items: center;
+    margin-left: 40px; */
+}
+#timer-btn{
+    background:none;
+    border:none;
+    margin:0;
+    color:var(--secondaryColor2);
+    /* padding:20px; */
+    cursor: pointer;
+    margin-left: 40%;
+}
+#time-btn{
+    background-color:var(--secondaryColor3);
+    border-radius: 40px;
+    cursor: pointer;  
+    /* display: inline-block; */
+ }
+#msg-btn{
+    background-color: var(--secondaryColor3);
+    border-radius: 40px;
+    cursor: pointer;  
+}
+#music-btn{
+    background-color:var(--secondaryColor3);
+    border-radius: 40px;
+    cursor: pointer;   
+} 
+.message-top{ 
+    height: 80%;
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--baseColor);
+    display: none;   
+}
+#msg-list{
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+}
+.msg1{
+    height: 20px;
+}  
+.playMusic{
+    display: none;
+    background-color: var(--baseColor);
+}
+
+#timedisplay{
+    /* display: block; */
+    margin-left: 40px;;
+}
+#daydisplay{
+    display: inline-block;
+    margin-left: 30%;
+}
+#monthdisplay{
+    display: inline-block;
 }

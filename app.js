@@ -1,6 +1,6 @@
  $(document).ready(function(){
     $("#msg-btn").click(function(){
-      $(".inner-rectangle").hide();
+      $(".timer").hide();
       $(".playMusic").hide();
       $(".message-top").show();
     });
@@ -14,7 +14,7 @@ $(document).ready(function() {
     
 $(document).ready(function(){
     $("#music-btn").click(function(){
-      $(".inner-rectangle").hide();
+      $(".timer").hide();
       $(".message-top").hide();
       $(".playMusic").show();
     });
@@ -24,7 +24,7 @@ $(document).ready(function(){
     $("#time-btn").click(function(){
         $(".message-top").hide();
         $(".playMusic").hide();
-        $(".inner-rectangle").show();
+        $(".timer").show();
     });
 }); 
 

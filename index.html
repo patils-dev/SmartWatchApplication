@@ -16,47 +16,62 @@
                 <div class="col right">
                     <div class="row upstrap">
                             <div class="col-sm-3 "></div>
-                            <div class="col-sm-6  upstrap1">
+                            <div class="col-sm-5  upstrap1">
                                  <div class="upperStrap"></div>
                             </div>
                             <div class="col-sm-3 col-lg-3"></div>
                     </div>
                     <div class="row mainWindow">
                         <div class="col-sm-3 "></div>
-                        <div class="col-sm-6 implementation">
+                        <div class="col-sm-5 implementation">
                                 <div class="outer-rectangle">
                                     <div class="inner-rectangle">
                                         
                                         <div class="row-sm 12 timer">
-                                                <i class="material-icons">access_time</i>    
+                                                <div class="row">                                            
+                                                        <button id="timer-btn"><i class="material-icons">access_time</i></button>                                             
+                                                        <h2 id="timedisplay">10:09 AM</h2>
+                                                        <p id="daydisplay">Monday</p> <p id="monthdisplay">Sept 06</p>                                               
+                                                </div>  
+                                        </div>
+
+                                        <div class="message-top">
+                                                <div class="heading-msg"></div> 
+                                                <div class="msg-display">
+                                                        <select id="msg-list" size="3"> 
+                                                                <option value="1">
+                                                                   <div class="msg1">
+                                                                       msg1
+                                                                   </div></option> 
+                                                                <option value="2">msg 2</option> 
+                                                                <option value="3">msg 3</option> 
+                                                                <option value="4">msg 4</option> 
+                                                                <option value="5">msg 5</option> 
+                                                                <option value="6">msg 6</option> 
+                                                        <select> 
+                                                </div>
+                                        </div>
+                                        <div class="playMusic">
+                                                <iframe id="player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXJfnUiYjUKT"
+                                                width="230" height="200" frameborder="0" allowtransparency="true" 
+                                                allow="encrypted-media"></iframe>
                                         </div>
                                         <div class="row-sm 12 time">
-                                            <h2 id="timedisplay">10:09 AM</h2>
-                                            <p id="monthdisplay">Monday sept 06</p>
+                                                <div class="row buttons">
+                                                        <div class="col-sm-4 first-btn">
+                                                            <button id="msg-btn"><i class="material-icons">&#xe0ca;</i></button>
+                                                        </div>
+                                                        <div class="col-sm-4 second-btn">
+                                                            <button id="music-btn"> <i class="material-icons">music_note</i></button>
+                                                        </div>
+                                                        <div class="col-sm-4 third-btn">
+                                                                <button id="time-btn"><i class="material-icons">access_time</i></button>    
+                                                        </div>
+                                                </div>
                                         </div>  
                                         
                                     </div>
-                                    <div class="message-top">
-                                            <div class="heading-msg"></div> 
-                                            <div class="msg-display">
-                                                    <select id="msg-list" size="3"> 
-                                                            <option value="1">
-                                                               <div class="msg1">
-                                                                   msg1
-                                                               </div></option> 
-                                                            <option value="2">msg 2</option> 
-                                                            <option value="3">msg 3</option> 
-                                                            <option value="4">msg 4</option> 
-                                                            <option value="5">msg 5</option> 
-                                                            <option value="6">msg 6</option> 
-                                                    <select> 
-                                            </div>
-                                    </div>
-                                    <div class="playMusic">
-                                            <iframe id="player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXJfnUiYjUKT"
-                                            width="212" height="215" frameborder="0" allowtransparency="true"
-                                            allow="encrypted-media"></iframe>
-                                    </div>
+                                    
 
 
 
@@ -68,20 +83,9 @@
 
                         <div class="row downStrap">
                             <div class="col-sm-3"></div>
-                            <div class="col-sm-6  downstrap1">
-                                <div class="lowerStrap">
-                                        <div class="row buttons">
-                                                <div class="col-sm-4 first-btn">
-                                                    <button id="msg-btn"><i class="material-icons">&#xe0ca;</i></button>
-                                                </div>
-                                                <div class="col-sm-4 second-btn">
-                                                    <button id="music-btn"> <i class="material-icons">music_note</i></button>
-                                                </div>
-                                                <div class="col-sm-4 third-btn">
-                                                        <button id="time-btn"><i class="material-icons">access_time</i></button>    
-                                                </div>
-                                        </div>
-                                </div>
+                            <div class="col-sm-5  downstrap1">
+                                <div class="lowerStrap"></div>
+                                
                             </div>
                             <div class="col-sm-3 "></div>
                         </div>
