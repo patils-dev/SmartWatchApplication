@@ -8,11 +8,11 @@
 .col.left{
     height: 100vh;
     background-color:var(--secondaryColor1);
-    text-align: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
 }
- .Heading{
-    margin-top: 50vh;
-}
+ 
 span{
     color: var(--baseColor);
 }
@@ -129,4 +129,7 @@ span{
 }  
 .playMusic{
     display: none;
+}
+.timedisplay{
+    margin-left: 40px;
 }

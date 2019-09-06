@@ -1,6 +1,7 @@
  $(document).ready(function(){
     $("#msg-btn").click(function(){
       $(".inner-rectangle").hide();
+      $(".playMusic").hide();
       $(".message-top").show();
     });
 }); 
@@ -18,7 +19,10 @@ $(document).ready(function() {
       $(".playMusic").show();
     });
 }); 
-function displaytime(){
-    var today = new Date();
-    var time = today.getHours() + ":" + today.getMinutes() 
-}
+
+var d=new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
+var newD = new Date();
+var n = newD.getDay()
+let week=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+document.getElementById("timedisplay").innerHTML =d;
+document.getElementById("monthdisplay").innerHTML =week[n];
