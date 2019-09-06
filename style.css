@@ -11,7 +11,7 @@
     text-align: center;
 }
 .Heading{
-    margin-top: 50%;
+    margin-top: 50vh;
 }
 span{
     color: var(--baseColor);
@@ -31,7 +31,7 @@ span{
     justify-content: center;
     align-items: center;
     display: flex;
-     height: 100%;
+    height: 100%;
     width: 100%;
     border-radius: 10px;
     background-color:var(--secondaryColor2);
@@ -45,6 +45,7 @@ span{
     background-color: var(--primaryColor);
 
 }
+
 .upperStrap{
     justify-content: center;
     align-items: flex-end;
@@ -68,11 +69,12 @@ span{
     display: flex;
 }
 .time{
-    height: 50%;
+    height: 33%;
     display: inline-block;
     align-items: center;
     margin-left: 40px;
 }
+
 
 #timer-btn{
     background:none;
@@ -106,9 +108,27 @@ span{
     cursor: pointer;
     /* display: inline-block; */
 }
-.first-btn{
+/* .first-btn{
     display:flex;
 }
 .message{
     display: none;
+} */
+.message-top{ 
+    padding: 10; 
+    margin: 10;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+    display: none;
+    
+}
+#msg-list{
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+}
+.msg1{
+    height: 20px;
 }
