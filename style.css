@@ -200,9 +200,10 @@ span{
     border-radius: 10px;
     background-color: black; 
 }
-.material-icons{
+/* .material-icons{
     color: var(--primaryColor);
-}
+} */
+
 .timer{
     height: 80%;
     display: flex;
@@ -225,16 +226,19 @@ span{
 #time-btn{
     background-color:var(--secondaryColor3);
     border-radius: 40px;
+    color: var(--primaryColor);
     cursor: pointer;  
     /* display: inline-block; */
  }
 #msg-btn{
     background-color: var(--secondaryColor3);
+    color: var(--primaryColor);
     border-radius: 40px;
     cursor: pointer;  
 }
 #music-btn{
     background-color:var(--secondaryColor3);
+    color: var(--primaryColor);
     border-radius: 40px;
     cursor: pointer;   
 } 
@@ -260,7 +264,7 @@ span{
 
 #timedisplay{
     /* display: block; */
-    margin-left: 40px;;
+    margin-left: 60px;;
 }
 #daydisplay{
     display: inline-block;
@@ -269,3 +273,42 @@ span{
 #monthdisplay{
     display: inline-block;
 }
+.stopwatch{
+    height: 80%;
+    display: flex;
+    display: none;
+}
+.full-msg{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.container {
+    border: none;
+    background-color:var(--secondaryColor1);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .darker {
+    border-color: #ccc;
+    background-color: var(--secondaryColor1);
+  }
+  
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.message-top{
+    margin: 0 0;
+    max-width: 240px;
+    max-height:200px;
+    overflow-y: scroll;
+    /* padding: 0 20px; */
+  }
+  #msg1{
+      cursor: pointer;
+  }

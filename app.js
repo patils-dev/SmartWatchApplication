@@ -2,13 +2,26 @@
     $("#msg-btn").click(function(){
       $(".timer").hide();
       $(".playMusic").hide();
+      $(".stopwatch").hide();
       $(".message-top").show();
+    });
+}); 
+$(document).ready(function(){
+    $("#msg1").click(function(){
+      $(".timer").hide();
+      $(".playMusic").hide();
+      $(".stopwatch").hide();
+      $(".message-top").hide();
+      $(".full-msg").show();
     });
 }); 
 $(document).ready(function() {
     
-    $("#time-btn").click(function displaytime(){
-
+    $("#timer-btn").click(function displaytime(){
+        $(".timer").hide();
+        $(".message-top").hide();
+       $(".playMusic").hide();
+       $(".stopwatch").show();
     });
   });
     
@@ -16,6 +29,7 @@ $(document).ready(function(){
     $("#music-btn").click(function(){
       $(".timer").hide();
       $(".message-top").hide();
+      $(".stopwatch").hide();
       $(".playMusic").show();
     });
 }); 
