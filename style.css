@@ -12,7 +12,9 @@
     justify-content: center;
     display: flex;
 }
- 
+.heading{
+    margin-top: 40%;
+}
 span{
     color: var(--baseColor);
 }
@@ -85,39 +87,29 @@ span{
     margin-left: 40%;
 }
 #time-btn{
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    cursor: pointer;
+    background-color: grey;
+    border-radius: 40px;
+    cursor: pointer;  
     /* display: inline-block; */
  }
 #msg-btn{
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    cursor: pointer;
-    
+    background-color: grey;
+    border-radius: 40px;
+    cursor: pointer;  
 }
 #music-btn{
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    cursor: pointer;
-    
+    background-color: grey;
+    border-radius: 40px;
+    cursor: pointer;   
 } 
-
- .message-top{ 
+.message-top{ 
     padding: 10; 
     margin: 10;
     height: 90%;
     width: 90%;
     border-radius: 10px;
     background-color: var(--primaryColor);
-    display: none;
-    
+    display: none;   
 }
 #msg-list{
     height: 90%;
@@ -130,6 +122,6 @@ span{
 .playMusic{
     display: none;
 }
-.timedisplay{
-    margin-left: 40px;
+.material-icons{
+    color: var(--primaryColor);
 }

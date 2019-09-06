@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
   });
     
-  $(document).ready(function(){
+$(document).ready(function(){
     $("#music-btn").click(function(){
       $(".inner-rectangle").hide();
       $(".message-top").hide();
@@ -20,9 +20,17 @@ $(document).ready(function() {
     });
 }); 
 
+$(document).ready(function(){
+    $("#time-btn").click(function(){
+        $(".message-top").hide();
+        $(".playMusic").hide();
+        $(".inner-rectangle").show();
+    });
+}); 
+
 var d=new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
 var newD = new Date();
-var n = newD.getDay()
+var n = newD.getDay();
 let week=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 document.getElementById("timedisplay").innerHTML =d;
 document.getElementById("monthdisplay").innerHTML =week[n];
