@@ -1,15 +1,20 @@
- var d=new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
-var newD = new Date();
-var n = newD.getDay();
+function displayDatedata()
+{
+let d=new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
+let newD = new Date();
+let n = newD.getDay();
 let week=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 document.getElementById("timedisplay").innerHTML =d;
-document.getElementById("monthdisplay").innerHTML=week[n];
+document.getElementById("timedisplay1").innerHTML=d;
+document.getElementById("timedisplay2").innerHTML=d;
+document.getElementById("timedisplay3").innerHTML=d;
+document.getElementById("daydisplay").innerHTML=week[n];
  
- 
- const msgArray=[{msg:"Hello. How are you today?",time:11.00},
- {msg:"Hey! I'm fine. Thanks for asking!",time:4.05},
- {msg:"Sweet! So, what do you wanna do today?",time:7.00},
- {msg:"Nah, I dunno. Play soccer.. or learn more coding perhaps?",time:6.00}
+}
+ const msgArray=[{name:"Aditi",msg:"Hello. How are you today?",time:11.00},
+ {name:"Shital",msg:"Hey! I'm fine. How are you??",time:4.05},
+ {name:"Jotiraj",msg:"Todays weather is very cloudy.what do you gonna do today? ",time:7.00},
+ {name:"Shital",msg:"Hii, where are you? Have you read today's news?? ",time:6.00}
 ]
  
  $(document).ready(function(){
@@ -27,7 +32,10 @@ $(document).ready(function(){
       $(".playMusic").hide();
       $(".stopwatch").hide();
       $(".message-top").hide();
-      console.log(msgArray[0].msg1)
+    //   console.log(msgArray[0].msg1)
+        // let selectedMsg=document.getElementById("")
+        
+        document.getElementById("msg-name").innerHTML=msgArray[0].name;
         document.getElementById("msg").innerHTML=msgArray[0].msg;
         // console.log(msgArray[0].time)
         // document.getElementsByClassName("time-left[0]").innerHTML=msgArray[0].time;
@@ -40,7 +48,8 @@ $(document).ready(function(){
       $(".playMusic").hide();
       $(".stopwatch").hide();
       $(".message-top").hide();
-      console.log(msgArray[0].msg1)
+     
+      document.getElementById("msg-name").innerHTML=msgArray[1].name;
         document.getElementById("msg").innerHTML=msgArray[1].msg;
       $(".full-msg").show();
     });
@@ -51,8 +60,9 @@ $(document).ready(function(){
       $(".playMusic").hide();
       $(".stopwatch").hide();
       $(".message-top").hide();
-      console.log(msgArray[0].msg1)
-        document.getElementById("msg").innerHTML=msgArray[2].msg;
+    
+      document.getElementById("msg-name").innerHTML=msgArray[2].name;
+        document.getElementsByClassName("msg").innerHTML=msgArray[2].msg;
       $(".full-msg").show();
     });
 }); 
@@ -62,7 +72,7 @@ $(document).ready(function(){
       $(".playMusic").hide();
       $(".stopwatch").hide();
       $(".message-top").hide();
-      console.log(msgArray[0].msg1)
+      document.getElementById("msg-name").innerHTML=msgArray[3].name;
         document.getElementById("msg").innerHTML=msgArray[3].msg;
       $(".full-msg").show();
     });

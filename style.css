@@ -269,15 +269,15 @@ span{
 
 #timedisplay{
     /* display: block; */
-    margin-left: 20%;;
+    margin-left: 25%;
 }
 #daydisplay{
-    display: inline-block;
-    margin-left: 30%;
+    /* display: inline-block; */
+    margin-left: 5%;
 }
-#monthdisplay{
-    display: inline-block;
-}
+/* #monthdisplay{
+    /* display: inline-block; 
+/* }  */
 .stopwatch{
     height: 80%;
     display: flex;
@@ -325,6 +325,12 @@ span{
     border-radius: 10px;
      border: none;
   }
-#backbutton{
+#backbutton1,#backbutton2{
+    cursor: pointer;
+}
+.navbar{
+    height: 30px;
+}
+span{
     cursor: pointer;
 }
