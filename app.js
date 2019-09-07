@@ -103,70 +103,85 @@ $("#timer-btn").click(function displaytime() {
        $(".playMusic").hide();
        $(".full-msg").hide();
        $(".stopwatch").show();
-// });
-// $("#start-btn").click(function displaytime() {   
-//     $(".timer").hide();
-//     $(".message-top").hide();
-//    $(".playMusic").hide();
-//    $(".full-msg").hide();
-//    $(".stopwatch").show();
-       console.log("runnin")
+
+    //    console.log("runnin")
        var h2 = document.getElementsByTagName('h2')[0],
         start = document.getElementById('start-btn'),
     // stop = document.getElementById(''),
     clear = document.getElementById('reset-btn'),
     seconds = 0, minutes = 0, hours = 0, t;
     let pressed=false;
+    let lapcount=1;
     $("#start-btn").click(function(){
         
                    if(pressed){
                     //    watch.stop();
                     stop();
                        start.textContent='start';
-                       console.log("first");
+                    //    console.log("first");
                    }
                    else{
-                    timer();
-                    
-                    console.log("second");
+                    timer();                   
+                    // console.log("second");
                     start.textContent='stop';
                    }
                    $("#reset-btn").click(function(){
                        reset();
                    });
+                   $("#lap-btn").click(function(){
+                    $(".timer").hide();
+                    $(".message-top").hide();
+                    $(".stopwatch").hide();
+                    $(".full-msg").hide();
+                    $(".playMusic").hide();
+                    $(".stopwatch").show();
+                       lap();
+                       $(".lapsShows").show();
+                   })
                });
 
-function add() {
-    seconds++;
-    if (seconds >= 60) {
-        seconds = 0;
-        minutes++;
-        if (minutes >= 60) {
-            minutes = 0;
-            hours++;
+    function add() {
+        seconds++;
+        if (seconds >= 60) {
+            seconds = 0;
+            minutes++;
+            if (minutes >= 60) {
+                minutes = 0;
+                hours++;
+            }
         }
+        
+        h2.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+        timer();
     }
+    function timer() {
     
-    h2.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+        t = setTimeout(add, 1000);
+        pressed=true;
+    }
 
-    timer();
-}
-function timer() {
-  
-    t = setTimeout(add, 1000);
-    pressed=true;
-}
-
-function stop(){
-    pressed=false;
-    clearTimeout(t);
-}
+    function stop(){
+        pressed=false;
+        clearTimeout(t);
+    }
 
 
-function reset(){
+    function reset(){
     h2.textContent = "00:00:00";
     seconds = 0; minutes = 0; hours = 0; 
+    lapcount=1;
     //timer();
+   }
+   function lap()
+   {
+      
+    let laplbltxt = document.createTextNode("lap"+lapcount+" - "+hours+":"+minutes+":"+seconds);
+    
+   let lap = document.getElementById("lap-display");
+    lap.appendChild(laplbltxt);
+    lapcount+=1;
+    
    }
   
 $(document).ready(function(){

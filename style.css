@@ -334,3 +334,9 @@ span{
 span{
     cursor: pointer;
 }
+.lapsShows{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
