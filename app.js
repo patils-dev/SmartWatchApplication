@@ -65,37 +65,7 @@ $(document).ready(function(){
       $(".full-msg").show();
     });
 }); 
-// $(document).ready(function() {   
-//     $("#timer-btn").click(function displaytime(){
-//         $(".timer").hide();
-//         $(".message-top").hide();
-//        $(".playMusic").hide();
-//        $(".full-msg").hide();
-//        $(".stopwatch").show();
-//        let timer=document.getElementById("display-timer");
-//        let togglebtn=document.getElementById("start-btn");
-//        let resetbtn=document.getElementById("reset-btn");
-//        let watch=new stopwatch(timer);
-//        $("#start-btn").click(function(){
-//            console.log("in fun")
-//            if(watch.isOn){
-//                watch.stop();
-//                togglebtn.textContent='start';
-//            }
-//            else{
-//             watch.start();
-//             togglebtn.textContent='stop';
-//            }
-//        })
-//        $("#reset-btn").click(function(){
-//             watch.reset();
-//         })
-//         $("$lap-btn").click(function(){
-//             watch.lap();
-//         })
-//     });
-//   });
-  
+
   
 $("#timer-btn").click(function displaytime() {   
         $(".timer").hide();
