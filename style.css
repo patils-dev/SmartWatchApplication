@@ -131,8 +131,8 @@ span{
     --primaryColor:rgb(88, 180, 166);
     --secondaryColor1:rgb(55, 173, 241);
     --secondaryColor2:black;
-    --secondaryColor3:grey;
-    --baseColor:rgb(203, 212, 212);
+    --secondaryColor3:rgb(103, 113, 114);
+    --baseColor:rgb(196, 202, 202);
 }
 
 .col.left{
@@ -206,7 +206,10 @@ span{
 
 .timer{
     height: 80%;
-    display: flex;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .time{
     height: 20%;
@@ -220,27 +223,29 @@ span{
     margin:0;
     color:var(--secondaryColor2);
     /* padding:20px; */
+    height: 29px;;
     cursor: pointer;
     margin-left: 40%;
+    margin-top:10px;
 }
 #time-btn{
     background-color:var(--secondaryColor3);
     border-radius: 40px;
+    border: none;
     color: var(--primaryColor);
-    cursor: pointer;  
     /* display: inline-block; */
  }
 #msg-btn{
     background-color: var(--secondaryColor3);
     color: var(--primaryColor);
+    border:none;
     border-radius: 40px;
-    cursor: pointer;  
 }
 #music-btn{
     background-color:var(--secondaryColor3);
     color: var(--primaryColor);
     border-radius: 40px;
-    cursor: pointer;   
+    border:none;
 } 
 .message-top{ 
     height: 80%;
@@ -264,7 +269,7 @@ span{
 
 #timedisplay{
     /* display: block; */
-    margin-left: 60px;;
+    margin-left: 20%;;
 }
 #daydisplay{
     display: inline-block;
@@ -277,6 +282,8 @@ span{
     height: 80%;
     display: flex;
     display: none;
+    text-align: center;
+    
 }
 .full-msg{
     height: 80%;
@@ -309,6 +316,15 @@ span{
     overflow-y: scroll;
     /* padding: 0 20px; */
   }
-  #msg1{
+  #msg1,#msg2,#msg3,#msg4{
       cursor: pointer;
   }
+  #reset-btn,#start-btn,#lap-btn{
+    background-color:var(--secondaryColor3);
+    /* color: var(--primaryColor); */
+    border-radius: 10px;
+     border: none;
+  }
+#backbutton{
+    cursor: pointer;
+}
