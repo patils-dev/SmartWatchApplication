@@ -1,16 +1,4 @@
-function displayDatedata()
-{
-let d=new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
-let newD = new Date();
-let n = newD.getDay();
-let week=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-document.getElementById("timedisplay").innerHTML =d;
-document.getElementById("timedisplay1").innerHTML=d;
-document.getElementById("timedisplay2").innerHTML=d;
-document.getElementById("timedisplay3").innerHTML=d;
-document.getElementById("daydisplay").innerHTML=week[n];
- 
-}
+
  const msgArray=[{name:"Aditi",msg:"Hello. How are you today?",time:11.00},
  {name:"Shital",msg:"Hey! I'm fine. How are you??",time:4.05},
  {name:"Jotiraj",msg:"Todays weather is very cloudy.what do you gonna do today? ",time:7.00},
@@ -62,7 +50,7 @@ $(document).ready(function(){
       $(".message-top").hide();
     
       document.getElementById("msg-name").innerHTML=msgArray[2].name;
-        document.getElementsByClassName("msg").innerHTML=msgArray[2].msg;
+        document.getElementById("msg").innerHTML=msgArray[2].msg;
       $(".full-msg").show();
     });
 }); 
@@ -77,8 +65,7 @@ $(document).ready(function(){
       $(".full-msg").show();
     });
 }); 
-$(document).ready(function() {
-    
+$(document).ready(function() {   
     $("#timer-btn").click(function displaytime(){
         $(".timer").hide();
         $(".message-top").hide();
@@ -139,5 +126,15 @@ $(document).ready(function(){
         $(".timer").show();
     });
 }); 
-
-console.log("app")
+function displayData(){
+let d=new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
+let newD = new Date();
+let n = newD.getDay();
+let week=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+document.getElementById("timedisplay").innerHTML =d;
+document.getElementById("timedisplay1").innerHTML=d;
+document.getElementById("timedisplay2").innerHTML=d;
+document.getElementById("timedisplay3").innerHTML=d;
+document.getElementById("daydisplay").innerHTML=week[n];
+}
+window.onload=displayData();
