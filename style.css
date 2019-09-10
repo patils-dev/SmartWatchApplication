@@ -1,10 +1,10 @@
 
 :root{
-    --primaryColor:rgb(88, 180, 166);
-    --secondaryColor1:rgb(55, 173, 241);
+    --primaryColor:rgb(184, 118, 129);
+    --secondaryColor1:rgb(220, 133, 241);
     --secondaryColor2:black;
-    --secondaryColor3:rgb(103, 113, 114);
-    --baseColor:rgb(196, 202, 202);
+    --secondaryColor3:rgb(237, 241, 241);
+    --baseColor:rgb(235, 245, 245);
 }
 
 .col.left{
