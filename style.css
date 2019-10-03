@@ -1,7 +1,6 @@
-
 :root{
-    --primaryColor:rgb(184, 118, 129);
-    --secondaryColor1:rgb(220, 133, 241);
+    --primaryColor:rgb(19, 19, 18);
+    --secondaryColor1:rgb(145, 214, 185);
     --secondaryColor2:black;
     --secondaryColor3:rgb(237, 241, 241);
     --baseColor:rgb(235, 245, 245);
@@ -22,6 +21,7 @@ span{
 }
 .row.upstrap{
     height: 33%;
+    display: flex;
     
 }
 .row.mainWindow{
@@ -53,10 +53,10 @@ span{
 .upperStrap{
     justify-content: center;
     align-items: center;
-    display: flex;
+    /* display: flex; */
     margin-top: 21.5vh;
-    margin-left: 45px;
-    /* margin-right: 20px; */
+    /* margin-left: 45px; */
+    margin-left: 30px;
     height: 35%;
     width: 60%;
     border-radius: 10px;
@@ -65,8 +65,8 @@ span{
 .lowerStrap{
     justify-content: center;
     align-items: center;
-    margin-left: 45px;
-    /* margin-right: 20px; */
+    /* margin-left: 45px; */
+    margin-left: 30px; 
     height: 60%;
     width: 60%;
     border-radius: 10px;
@@ -84,6 +84,9 @@ span{
     height: 20%;
    
 }
+.buttons{
+    display: flex;
+}
 #timer-btn{
     background:none;
     border:none;
@@ -100,6 +103,7 @@ span{
     border-radius: 40px;
     border: none;
     color: var(--primaryColor);
+    padding: 0;
    
  }
 #msg-btn{
@@ -107,20 +111,23 @@ span{
     color: var(--primaryColor);
     border:none;
     border-radius: 40px;
+    padding: 0;
 }
 #music-btn{
     background-color:var(--secondaryColor3);
     color: var(--primaryColor);
     border-radius: 40px;
     border:none;
+    padding: 0;
 } 
-.message-top{ 
+/* .message-top{ 
     height: 80%;
     display: flex;
     border-radius: 10px;
     background-color: var(--baseColor);
     display: none;   
-}
+} */
+
 #msg-list{
     height: 90%;
     width: 90%;
@@ -182,6 +189,7 @@ span{
     display: none;
     /* padding: 0 20px; */
   }
+  .message-top::-webkit-scrollbar { width: 0 !important }
   #msg1,#msg2,#msg3,#msg4{
       cursor: pointer;
   }
