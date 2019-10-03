@@ -1,6 +1,6 @@
 :root{
     --primaryColor:rgb(19, 19, 18);
-    --secondaryColor1:rgb(145, 214, 185);
+    --secondaryColor1:rgb(164, 218, 204);
     --secondaryColor2:black;
     --secondaryColor3:rgb(237, 241, 241);
     --baseColor:rgb(235, 245, 245);
@@ -14,9 +14,9 @@
     display: flex;
 }
 .heading{
-    margin-top: 40%;
+    margin-top: 45%;
 }
-span{
+#header-span{
     color: var(--baseColor);
 }
 .row.upstrap{
@@ -46,6 +46,8 @@ span{
     height: 90%;
     width: 90%;
     border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: var(--baseColor);
 
 }
@@ -55,22 +57,22 @@ span{
     align-items: center;
     /* display: flex; */
     margin-top: 21.5vh;
-    /* margin-left: 45px; */
-    margin-left: 30px;
-    height: 35%;
-    width: 60%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100px;
+    width: 70%;
+    /* border-radius: 10px; */
     background-color: var(--secondaryColor2); 
 }
 .lowerStrap{
     justify-content: center;
     align-items: center;
-    /* margin-left: 45px; */
-    margin-left: 30px; 
-    height: 60%;
-    width: 60%;
-    border-radius: 10px;
+    height: 70px;
+    width: 70%;
     background-color:var(--secondaryColor2); 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
 }
 
 .timer{
@@ -81,21 +83,19 @@ span{
     justify-content: center;
 }
 .time{
-    height: 20%;
+    height: 40%;
    
 }
-.buttons{
+/* .buttons{
     display: flex;
-}
+} */
 #timer-btn{
     background:none;
     border:none;
-    margin:0;
     color:var(--secondaryColor2);
-    
     height: 29px;;
     cursor: pointer;
-    margin-left: 40%;
+    margin-left: 45%;
     margin-top:10px;
 }
 #time-btn{
@@ -137,13 +137,15 @@ span{
     height: 20px;
 }  
 .playMusic{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     display: none;
     background-color: var(--baseColor);
 }
 
 #timedisplay{
     
-    margin-left: 25%;
+    margin-left: 33%;
 }
 #daydisplay{
    
@@ -167,7 +169,7 @@ span{
     border: none;
     background-color:var(--secondaryColor1);
     border-radius: 20px;
-    padding: 10px;
+    padding-bottom: 10px;
     margin: 10px 0;
   }
   
@@ -175,18 +177,19 @@ span{
     border-color:var(--baseColor);;
     background-color: var(--secondaryColor1);
   }
-  
+
   .container::after {
     content: "";
     clear: both;
     display: table;
   }
 .message-top{
-    margin: 0 0;
+    margin: 0 ;
     max-width: 240px;
-    max-height:200px;
+    max-height:230px;
     overflow-y: scroll;
     display: none;
+    height: 80%;
     /* padding: 0 20px; */
   }
   .message-top::-webkit-scrollbar { width: 0 !important }
@@ -199,7 +202,7 @@ span{
     border-radius: 10px;
      border: none;
   }
-#backbutton{
+#backbutton1,#backbutton3,#backbutton2{
     cursor: pointer;
 }
 .navbar{
@@ -213,4 +216,14 @@ span{
     display: flex;
     justify-content: center;
     display: none;
+}
+/* .upstrap.upstrap1{
+    height: 100px;
+    width: 150px;
+} */
+#lap-display
+{
+    /* max-width: 70px; */
+    max-height:80px;
+    overflow-y: scroll;
 }
