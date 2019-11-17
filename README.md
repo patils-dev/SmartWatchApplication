@@ -9,6 +9,10 @@ Bootstrap
 Javascript
 JQuery
 
+## Image:
+![smartwatch](images/start.PNG)
+
+
 ## Preview
 
 https://patils-dev.github.io/SmartWatchApplication/
