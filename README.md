@@ -10,8 +10,7 @@ Javascript
 JQuery
 
 ## Image:
-![smartwatch](images/start.PNG)
-
+![smartwatch](images/watch.PNG)
 
 ## Preview
 
