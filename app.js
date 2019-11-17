@@ -1,3 +1,4 @@
+//Array of messages
 const msgArray=
 [
  {name:"Aditi",msg:"Hello. How are you today?",time:11.00},
@@ -6,22 +7,22 @@ const msgArray=
  {name:"Anaya",msg:"Hii, where are you? Have you read today's news?? ",time:6.00}
 ]
 
-
+//this function will execute after loading html document
 $(document).ready(function(){
 
+    //this function will hide all other divs and only display div which has list of messages
     $("#msg-btn").click(function(){
         $(".timer,.playMusic,.stopwatch,.full-msg").hide();
         $(".message-top").show();
     });
 
-
+    //
     $("#msg1").click(function(){
         $(".timer,.playMusic,.stopwatch,.message-top").hide();
         document.getElementById("msg-name").innerHTML=msgArray[0].name;
         document.getElementById("msg").innerHTML=msgArray[0].msg;
         $(".full-msg").show();
     });
-
 
     $("#msg2").click(function(){
        $(".timer,.playMusic,.stopwatch,..message-top").hide();
@@ -30,7 +31,7 @@ $(document).ready(function(){
        document.getElementById("msg").innerHTML=msgArray[1].msg;
        $(".full-msg").show();
     });
-}); 
+ 
 
 $("#msg3").click(function(){
     $(".timer,.playMusic,.stopwatch,.message-top").hide();
@@ -148,6 +149,9 @@ $("#time-btn").click(function(){
     $(".stopwatch").show();
 });
   
+})
+
+//this function is for displaying date time information
 function displayData(){
   let d=new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
   let newD = new Date();
