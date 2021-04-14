@@ -14,4 +14,4 @@ JQuery
 
 ## Preview
 
-https://patils-dev.github.io/SmartWatchApplication/
+https://smita-dev.github.io/SmartWatchApplication/
